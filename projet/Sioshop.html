@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== LINE ICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <title>Portfolio Adrien Bouture</title>
+</head>
+
+<body>
+    <main class="main-content">
+        <div class="container-projet">
+            <a href="../index.html#portfolio" class="btn-retour">
+                <h2>Retour</h2>
+            </a>
+            <hr/>
+            <h1>Projet réalisé en cours : SIO-SHOP</h1>
+            <br>
+            <br>
+            <h2>Contexte du projet</h2>
+            <p>
+              SIO-SHOP a été développé en C# Windows Forms, dans le cadre de ma deuxième année de BTS SIO, 
+              au cours duquel nous devions mettre en œuvre une application de gestion pour une concession automobile fictive. <br>
+              L'objectif pédagogique était de consolider les notions de programmation orientée objet (hiérarchie de classes, héritage), 
+              de gérer les interactions avec une base de données MySQL.
+            </p>
+            <br/>
+            <br/>
+            <h2>Technologies utilisées</h2>
+            <div class="technologies-utilisees">
+                <span class="technologie-tag"><i class="lni lni-code"></i> C#</span>
+                <span class="technologie-tag"><i class="lni lni-display"></i> Windows Forms</span>
+                <span class="technologie-tag"><i class="lni lni-database"></i> MySQL</span>
+            </div>
+            <br/>
+            <br/>
+            <p>
+                L'application offre une authentification sécurisée des utilisateurs, permettant de contrôler l'accès aux différentes fonctionnalités 
+                selon le profil de l'utilisateur connecté. Chaque employé dispose d'identifiants personnels pour accéder au système.
+            </p>
+            
+            <div class="image-container">
+                <img src="../assets/img/Sioshop/Authentification_Sioshop.png" alt="Interface d'authentification SIO-SHOP" style="width: 75%; height: auto;">
+                <div class="image-caption">Interface d'authentification</div>
+            </div>
+    
+            <p>
+                Pour la gestion des données, l'application utilise une base de données MySQL qui stocke toutes les informations relatives aux clients, 
+                aux produits et aux ventes. <br/> 
+                Voici le MCD de cette base de données.
+            </p>
+    
+            <div class="image-container">
+                <img src="../assets/img/Sioshop/MCD_Sioshop.png" alt="Modèle Conceptuel des Données" style="width: 75%; height: auto;">
+                <div class="image-caption">Modèle Conceptuel des Données (MCD) de l'application</div>
+            </div>
+
+            <p>
+                Une fois connecté, l'utilisateur accède au menu principal qui propose différentes fonctionnalités : gestion des clients, 
+                gestion des produits, saisie des ventes, et déconnexion. L'interface est conçue pour être intuitive et facile à utiliser.
+            </p>
+    
+            <div class="image-container">
+                <img src="../assets/img/Sioshop/accueil_Sioshop.png" alt="Menu principal SIO-SHOP" style="width: 75%; height: auto;">
+                <div class="image-caption">Menu principal avec les différentes fonctionnalités</div>
+            </div>
+    
+            <p>
+                La fonctionnalité de saisie des ventes permet d'enregistrer les transactions entre les clients et la concession. 
+                Elle calcule automatiquement la TVA et met à jour les stocks de véhicules disponibles.
+            </p>
+    
+            <div class="image-container">
+                <img src="../assets/img/Sioshop/Saisir_vente_sioshop.png" alt="Interface de saisie des ventes" style="width: 75%; height: auto;">
+                <div class="image-caption">Interface de saisie des ventes</div>
+            </div>
+    
+            <p>
+                La gestion des clients permet de visualiser, rechercher, ajouter et modifier les informations des clients de la concession.
+                Une barre de recherche facilite la recherche par nom.
+            </p>
+    
+            <div class="image-container">
+                <img src="../assets/img/Sioshop/Gestion_Client_sioshop.png" alt="Gestion des clients" style="width: 75%; height: auto;">
+                <div class="image-caption">Interface de gestion des clients</div>
+            </div>
+
+            <p>
+                Un double-clic sur un client permet d'accéder à ses informations détaillées avec la possibilité de les modifier, 
+                on voit aussi l'historique de ses achats, ainsi que le montant total dépensé.
+            </p>
+    
+            <div class="image-container">
+                <img src="../assets/img/Sioshop/info_client_Sioshop.png" alt="Gestion des clients" style="width: 75%; height: auto;">
+                <div class="image-caption">Informations personnelles des clients</div>
+            </div>
+    
+            <p>
+                Le bouton "Nouveau client" nous mène vers cet interface ainsi on peut enregistrer les donées du clients dans la base de données.
+            </p>
+    
+            <div class="image-container">
+                <img src="../assets/img/Sioshop/Nouveau_Client_Sioshop.png" alt="Gestion des clients" style="width: 75%; height: auto;">
+                <div class="image-caption">Interface d'ajout de client</div>
+            </div>
+
+            <p>
+                La gestion des produits permet de visualiser l'ensemble des véhicules disponibles, avec leurs caractéristiques (marque, modèle, prix, stock).
+                Une recherche approfondie par marque est également disponible pour filtrer les résultats.
+            </p>
+    
+            <div class="image-container">
+                <img src="../assets/img/Sioshop/Gestion_Produit_Sioshop.png" alt="Gestion des produits" style="width: 75%; height: auto;">
+                <div class="image-caption">Interface de gestion des produits</div>
+            </div>
+
+            <p>
+                Un double-clic sur un produit permet d'accéder à ses informations détaillées avec la possibilité de les modifier.
+            </p>
+    
+            <div class="image-container">
+                <img src="../assets/img/Sioshop/info_produit_Sioshop.png" alt="Gestion des produits" style="width: 75%; height: auto;">
+                <div class="image-caption">Informations des produits</div>
+            </div>
+
+            <p>
+                Le bouton "Nouveau Produit" nous mène vers cet interface ainsi on peut enregistrer les donées du produit dans la base de données.
+            </p>
+    
+            <div class="image-container">
+                <img src="../assets/img/Sioshop/Nouveau_Produit_Sioshop.png" alt="Gestion des produits" style="width: 75%; height: auto;">
+                <div class="image-caption">Interface d'ajout de produit</div>
+            </div>
+    
+
+    
+            <p>
+                L'application est structurée selon le modèle orienté objet avec une hiérarchie de classes représentant les entités métier :
+                Personne (classe mère), Employé (hérite de Personne), Client (hérite de Personne), et Produit (véhicules).
+                Cette architecture permet une maintenance facile et une évolution du code.
+            </p>
+    
+
+    
+            <br>
+            <br>   
+            <h2>Compétences acquises</h2>
+            <div class="competences-section">               
+                <img src="../assets/img/91Tableau de synthèse sioshop.png" class="center-image" width="700" height="auto" />
+            </div>         
+
+            <a href="../index.html#portfolio" class="btn-retour">
+                <h2>Retour</h2>
+            </a>
+            <hr/>
+
+        </div>
+    </main>
+    
+    <!--==== SWIPER JS ====-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!--==== JS ====-->
+    <script src="../assets/js/main.js"></script>
+</body>

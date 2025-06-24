@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== LINE ICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <title>Portfolio Adrien Bouture</title>
+</head>
+
+<body>
+    <main class="main-content">
+        <div class="container-projet">
+            <a href="../index.html#portfolio" class="btn-retour">
+                <h2>Retour</h2>
+            </a>
+
+            <h1>Projet de stage de deuxième année </h1>
+            <br>
+            <br>
+            <h2>Contexte du projet</h2>
+            
+            <p>
+                Durant six semaines, j'ai réalisé mon stage de deuxième année avec un autre élève sous la supervision de M. Dupont.  <br>
+                Notre mission consistait à concevoir et développer en PHP une plateforme baptisée « SioConnect », 
+                destinée à centraliser et valoriser les données des anciens élèves du BTS SIO du lycée Édouard Gand. <br> 
+                L'objectif était de fournir aux futurs étudiants un outil leur permettant de découvrir des opportunités 
+                de stage et d'emploi via un site web interactif.
+            </p>
+            <br>
+            <br>
+            <h2>Technologies utilisées</h2>
+            <div class="technologies-utilisees">
+                <span class="technologie-tag"><i class="lni lni-html5"></i> HTML</span>
+                <span class="technologie-tag"><i class="lni lni-css3"></i> CSS</span>
+                <span class="technologie-tag"><i class="lni lni-javascript"></i> JavaScript</span>
+                <span class="technologie-tag"><i class="lni lni-php"></i> PHP</span>
+                <span class="technologie-tag"><i class="lni lni-database"></i> MySQL</span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h2>Mission réalisée</h2>
+            <p>
+                L'interface a été pensée pour offrir une expérience utilisateur fluide et intuitive :  
+                une page d'accueil présentant un aperçu global, un menu de catégorisation clair et des pages dédiées à chaque 
+                type d'information (parcours professionnel, scolaires, stages, poste actuel).  <br>
+                Chaque section permettait de filtrer, rechercher et consulter les profils des anciens élèves de manière structurée.
+            </p>
+            <div class="image-container">
+                <img src="../assets/img/Sioconnect/Site-SIOCONNECT.PNG" alt="Page d'accueil SioConnect" style="width: 60%; height: auto;">
+                <div class="image-caption">Page d'accueil de SioConnect</div>
+            </div>
+            
+            <p>
+                Dans le projet "SioConnect", j'ai également développé un espace de connexion pour permettre aux utilisateurs de créer un compte et de se connecter à leur profil.
+                Cet espace de connexion offrait des fonctionnalités supplémentaires, tel que la gestion des informations personnelles.
+            </p>
+
+            <div class="image-container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <div style="flex: 0 0 48%;">
+                    <img src="../assets/img/Sioconnect/Connexion-Sioconnect.png" alt="Accès interdit" style="width: 90%; height: auto;">
+                    <div class="image-caption">Espace de connexion de SioConnect</div>
+                </div>
+                <div style="flex: 0 0 48%;">
+                    <img src="../assets/img/Sioconnect/Code_connexion-Sioconnect.png" alt="Table utilisateur" style="width: 70%; height: auto;">
+                    <div class="image-caption">Code du traitement des données de la connexion</div>
+                </div>
+            </div>  
+            
+            <p>
+                Pour gérer leurs données, j'ai utilisé une base de données SQL. 
+                La modélisation de la base de données a été réalisée de manière à stocker les informations pertinentes pour chaque utilisateur, telles que le nom, la prenom, l'email,
+                mais aussi leurs stages effectués, leurs poste actuel, etc. 
+                J'ai créé des tables pour les utilisateurs, les anciens elèves, les stages, et les postes actuels en établissant les relations nécessaires entre elles pour assurer une bonne intégrité des données.
+            </p>
+            
+            
+            <div class="image-container">
+                <img src="../assets/img/Sioconnect/MCD-SIOCONNECT.PNG" alt="Modèle Conceptuel de Données" style="width: 75%; height: auto;">
+                <div class="image-caption">Modèle Conceptuel des Données</div>
+            </div>
+            
+            <p>
+                La page "profil" a un visuel simple et intuitif afin que l'utilisateur puisse renseigner ces informations personnelles, son poste actuel,
+                ou encore tous les stages qu'il a réalisé au cours de son parcours professionnel.
+            </p>
+            
+            <div class="image-container">
+                <img src="../assets/img/Sioconnect/Profil-SIOCONNECT.PNG" alt="Page profil" style="width: 75%; height: auto;">
+                <div class="image-caption">Affichage de la page profil</div>
+            </div>
+
+            <p>
+
+            </p>
+
+            <div class="image-container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <div style="flex: 0 0 48%;">
+                    <img src="../assets/img/Sioconnect/Code_profil_formulaire.png" alt="Accès interdit" style="width: 90%; height: auto;">
+                    <div class="image-caption">Code du formulaire de la page Profil</div>
+                </div>
+                <div style="flex: 0 0 48%;">
+                    <img src="../assets/img/Sioconnect/Code_traiter_formulaire.png" alt="Table utilisateur" style="width: 80%; height: auto;">
+                    <div class="image-caption">Code du traitement des données de la page profil</div>
+                </div>
+            </div>
+            
+            <p>
+                La page "Eleves" contient un tableau qui affiche l'ensemble des anciens èleves stocké dans la base de données.
+            </p>
+            
+            <div class="image-container">
+                <img src="../assets/img/Sioconnect/Eleves-SIOCONNECT.PNG" alt="Page élèves" style="width: 75%; height: auto;">
+                <div class="image-caption">Page de liste des élèves</div>
+            </div>
+            
+            <p>
+                Une barre de recherche est mise a disposition afin de rechercher une informations dans n'importe quelle colonne du tableau.
+                Une fois la recherche effectuée, seulement les élèves ayant une données correspondant a ce critère apparaiteront dans le tableau.
+            </p>
+            
+            <div class="image-container">
+                <img src="../assets/img/Sioconnect/Recherche-eleves-SIOCONNECT.PNG" alt="Recherche d'élèves" style="width: 75%; height: auto;">
+                <div class="image-caption">Fonctionnalité de recherche d'élèves</div>
+            </div>
+            
+            <p>
+                Lorsque l'on clique sur un élève un pop up s'ouvre et affiche l'ensemble des données de cet élève.
+            </p>
+            
+            <div class="image-container">
+                <img src="../assets/img/Sioconnect/Tableau-eleves-SIOCONNECT.PNG" alt="Détail d'un élève" style="width: 75%; height: auto;">
+                <div class="image-caption">Affichage détaillé des informations d'un élève</div>
+            </div>
+            
+            <p>
+                Ensuite la page "Stage" fonctionne exactement de la meme façon que la page "Eleves" cependant le tableau affiche l'entreprise dans laquelle l'élève a éffectué son stage,
+                l'email de son maitre de stage et la durée de ce dernier.
+            </p>
+            
+            <div class="image-container">
+                <img src="../assets/img/Sioconnect/Stage-SIOCONNECT.PNG" alt="Page stages" style="width: 75%; height: auto;">
+                <div class="image-caption">Page de gestion des stages</div>
+            </div>
+            
+            <p>
+                Et enfin j'ai créé un panneau d'administration accessible uniquement par les utilisateur ayant le rôle d'administrateur.
+                Ce panneau sert a accepter ou non l'inscription des nouveaux utilisateur qui est mis en attente.
+            </p>
+            
+            <div class="image-container">
+                <img src="../assets/img/Sioconnect/Panneau-admin-SIOCONNECT.PNG" alt="Panneau d'administration" style="width: 75%; height: auto;">
+                <div class="image-caption">Panneau d'administration</div>
+            </div>
+            
+
+
+            <br>
+            <br>   
+            <h2>Compétences acquises</h2>
+            <div class="competences-section">               
+                <img src="../assets/img/91Tableau de synthèse sioconnect.png" class="center-image" width="700" height="auto" />
+            </div>         
+
+            <a href="../index.html#portfolio" class="btn-retour">
+                <h2>Retour</h2>
+            </a>
+            <hr/>
+
+        </div>
+    </main>
+    
+    <!--==== SWIPER JS ====-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!--==== JS ====-->
+    <script src="../assets/js/main.js"></script>
+</body>

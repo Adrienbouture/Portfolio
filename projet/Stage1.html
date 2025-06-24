@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== LINE ICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <title>Portfolio Adrien Bouture</title>
+</head>
+
+<body>
+    <main class="main-content">
+        <div class="container-projet">
+
+            <a href="../index.html#portfolio" class="btn-retour">
+                <h2>Retour</h2>
+            </a>
+
+            <h1>Projet de stage de première année</h1>
+            <br>
+            <br>
+            <h2>Contexte du projet</h2>
+            <p>
+                J'ai effectué ce stage de 4 semaines, sous la supervision de M. Dupont. Il souhaitait ameliorer sa plateforme "Projets Édouard Gand" qui présente les réalisations pédagogiques 
+                des étudiants. <br>
+                Ma mission principale consistait à développer un panneau d'administration sécurisé permettant aux responsables pédagogiques de gérer eux-mêmes les projets présentés 
+                sur la plateforme. <br>
+                Le projet impliquait la création d'interfaces de gestion (ajout, modification, suppression de projets) et l'intégration avec la base de données existante. <br>
+                Cette expérience m'a permis de découvrir le PHP dans un contexte professionnel et de développer mes compétences en développement web.<br>
+                Ensuite j'ai travaillé sur la plateforme www.portail-sio.fr qui est utilisée par les étudiants afin de pouvoir suivre leur progression lors de leur BTS ou Bachelor.
+            </p>
+            <br>
+            <br>
+            <h2>Technologies utilisées</h2>
+            <div class="technologies-utilisees">
+                <span class="technologie-tag"><i class="lni lni-html5"></i> HTML</span>
+                <span class="technologie-tag"><i class="lni lni-css3"></i> CSS</span>
+                <span class="technologie-tag"><i class="lni lni-php"></i> PHP</span>
+                <span class="technologie-tag"><i class="lni lni-database"></i> MySQL</span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <h2>Première mission (Projets Edouard Gand)</h2>
+            <p>
+                Ma première mission a été d'ajouter un panneau d'administration à ce portail pédagogique. <br>
+                Ce panneau d'administration est accessible uniquement après connexion avec login et mot de passe.
+                Seuls les administrateurs peuvent s'y connecter. 
+            </p>    
+            <div class="image-container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <div style="flex: 0 0 48%;">
+                    <img src="../assets/img/Projets_gand/admin_connexion.PNG" alt="Accès interdit" style="width: 85%; height: auto;">
+                    <div class="image-caption">Formulaire d'authentification</div>
+                </div>
+                <div style="flex: 0 0 48%;">
+                    <img src="../assets/img/Projets_gand/utilisateur_table.PNG" alt="Table utilisateur" style="width: 85%; height: auto;">
+                    <div class="image-caption">Table utilisateur de la base de données</div>
+                </div>
+            </div>
+
+            <p>
+                Tout accès sera automatiquement refusé aux utilisateurs lambda.
+            </p>
+
+            <div class="image-container">
+                <img src="../assets/img/Projets_gand/accès_interdit.PNG" alt="Panneau d'administration" style="width: 75%; height: auto;">
+                <div class="image-caption">Message d'accès interdit</div>
+            </div>
+
+            <p>
+                Pour la gestion des données, j'ai utilisé une base de données SQL existante comprenant les tables 'utilisateur' et 'article'.
+            </p>
+
+            <div class="image-container">
+                <img src="../assets/img/Projets_gand/MCD-ProjetGand.PNG" alt="MCD Projet Gand" style="width: 75%; height: auto;">
+                <div class="image-caption">Modèle Conceptuel des Données</div>
+            </div>
+
+            <p>
+                Ce panneau se présente avec différentes options comme ajouter, modifier ou supprimer un projet ou alors se déconnecter.
+                Chaque bouton mène donc à une nouvelle page selon l'option choisie.
+            </p>
+
+            <div class="image-container">
+                <img src="../assets/img/Projets_gand/admin_panel.PNG" alt="Panneau d'administration" style="width: 75%; height: auto;">
+                <div class="image-caption">Panneau d'administration</div>
+            </div>
+
+            <p>
+                J'ai également créé des formulaires permettant d'ajouter, modifier et supprimer des projets, connectés directement à la base de données. <br>
+                Le bouton 'Nouveau projet' dirige l'utilisateur vers ce formulaire :
+            </p>
+
+            <div class="image-container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <div style="flex: 0 0 48%;">
+                    <img src="../assets/img/Projets_gand/nouveau.PNG" alt="Accès interdit" style="width: 82%; height: auto;">
+                    <div class="image-caption">Formulaire d'ajout de projet</div>
+                </div>
+                <div style="flex: 0 0 48%;">
+                    <img src="../assets/img/Projets_gand/Code_nouveau.png" alt="Table utilisateur" style="width: 85%; height: auto;">
+                    <div class="image-caption">Code du traitement des données de l'ajout de projet</div>
+                </div>
+            </div>
+
+            <p>
+                Le bouton "Modifier un projet" permet d'accéder à une liste des projets existants. L'administrateur peut alors sélectionner le projet qu'il souhaite modifier.
+            </p>
+
+            <div class="image-container">
+                <img src="../assets/img/Projets_gand/modifier.PNG" alt="Liste des projets modifiables" style="width: 75%; height: auto;">
+                <div class="image-caption">Liste des projets disponibles pour modification</div>
+            </div>
+
+            <p>
+                Une fois le projet sélectionné, l'administrateur accède à un formulaire pré-rempli avec les informations actuelles du projet.
+                Il peut alors modifier les champs souhaités.
+            </p>
+
+            <div class="image-container">
+                <img src="../assets/img/Projets_gand/getdata.PNG" alt="Formulaire de modification" style="width: 75%; height: auto;">
+                <div class="image-caption">Formulaire de modification d'un projet existant</div>
+            </div>
+
+            <p>
+                Le bouton "Supprimer un projet" permet également d'accéder à une liste des projets existants, mais cette fois-ci avec des boutons de suppression.
+            </p>
+
+            <div class="image-container">
+                <img src="../assets/img/Projets_gand/supprimer.PNG" alt="Interface de suppression de projets" style="width: 75%; height: auto;">
+                <div class="image-caption">Interface de suppression des projets</div>
+            </div>
+            <br>
+            <br>
+            <h2>Deuxième mission</h2>
+            <br>
+            <p>
+                Ma deuxième mission s'est déroulée sur www.portail-sio.fr, cette plateforme est utilisée par les étudiants afin de pouvoir suivre leur progression lors de leur BTS ou Bachelor. <br>
+                Sur cette plateforme se trouve un onglet “Les cours” qui affiche une liste de matières.
+            </p>
+
+            <div class="image-container">
+                <img src="../assets/img/Projets_gand/choix_matières.PNG" alt="Liste des matières" style="width: 75%; height: auto;">
+                <div class="image-caption">Liste des matières</div>
+            </div>
+
+            <p>
+                J'ai dû modifier un élément dans la matière Bachelor, les mention “Première année” et "Deuxième année" ne doivent pas apparaître car elles ne servent qu'aux BTS.
+            </p>
+
+            <div class="image-container">
+                <img src="../assets/img/Projets_gand/v_cours_avant.PNG" alt="Liste des matières corrigée" style="width: 75%; height: auto;">
+                <div class="image-caption">Affichage des cours de Bachelor avant modification </div>
+            </div>
+
+            <p>
+                Pour cela j'ai dû analyser et comprendre le code. Ce dernier etait sous forme de Modeles, vues, controleurs (MVC).
+            </p>
+
+            <div class="image-container">
+                <img src="../assets/img/Projets_gand/MVC_portail-sio.png" alt="Liste des matières corrigée" style="width: 100%; height: auto;">
+                <div class="image-caption">MVC Portail-sio</div>
+            </div>
+            <br>
+            <p>
+                L'affichage des cours s'effectue dans le fichier v_cours, j'ai créé la variable $coursBachelor afin de regrouper les cours de première et de deuxième année et les afficher
+                dans un même tableau.
+            </p>
+
+            <div class="image-container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <div style="flex: 0 0 48%;">
+                    <img src="../assets/img/Projets_gand/v_cours_après.PNG" alt="Accès interdit" style="width: 92%; height: auto;">
+                    <div class="image-caption">Affichage des cours de Bachelor après modification </div>
+                </div>
+                <div style="flex: 0 0 48%;">
+                    <img src="../assets/img/Projets_gand/Code_v_cours.png" alt="Table utilisateur" style="width: 80%; height: auto;">
+                    <div class="image-caption">Code du fichier v_cours</div>
+                </div>
+            </div>
+            <br>
+
+            <p>
+                Ensuite l'accès a la matière Bachelor devait être accessible uniquement par les utilisateurs ayant le rôle Bachelor, les administrateurs et les professeurs.
+
+            </p>
+
+            <div class="image-container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                <div style="flex: 0 0 48%;">
+                    <img src="../assets/img/Projets_gand/Code_choix_matiere.png" alt="Accès interdit" style="width: 75%; height: auto;">
+                    <div class="image-caption">Code du fichier v_choix_matiere </div>
+                </div>
+                <div style="flex: 0 0 48%;">
+                    <img src="../assets/img/Projets_gand/Code_case_bachelor.png" alt="Table utilisateur" style="width: 95%; height: auto;">
+                    <div class="image-caption">Code du case dans le fichier index</div>
+                </div>
+            </div>
+            <br>
+            <p>
+                Si un utilisateur sans un de ces 3 roles essaye d'y acceder, son accès sera refusé.
+
+            </p>
+
+            <div class="image-container">
+                <img src="../assets/img/Projets_gand/acces_interdit.png" alt="Liste des matières corrigée" style="width: 100%; height: auto;">
+                <div class="image-caption">message accès interdit</div>
+            </div>
+
+
+
+            <br>
+            <br>   
+            <h2>Compétences acquises</h2>
+            <div class="competences-section">               
+                <img src="../assets/img/91Tableau de synthèse  projet gand.png" class="center-image" width="700" height="auto" />
+            </div>         
+
+            <a href="../index.html#portfolio" class="btn-retour">
+                <h2>Retour</h2>
+            </a>
+            <hr/>
+
+        </div>
+    </main>
+    
+    <!--==== SWIPER JS ====-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!--==== JS ====-->
+    <script src="../assets/js/main.js"></script>
+</body>
