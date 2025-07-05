@@ -71,7 +71,7 @@ function navHighlighter() {
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("showCv").addEventListener("click", function (e) {
         e.preventDefault(); // Empêche l’ouverture du lien classique
-        window.open("assets/img/CV Adrien Bouture.pdf", "popupCv", "width=900,height=1000,scrollbars=yes,resizable=yes");
+        window.open("assets/img/CV_Adrien_Bouture.pdf", "popupCv", "width=900,height=1000,scrollbars=yes,resizable=yes");
     });
 });
 
